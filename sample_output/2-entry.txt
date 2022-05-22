@@ -1,0 +1,278 @@
+Enter entry number:(must be 2,4,8,16,....)
+2
+Enter assembly code:(finish by EOF)
+addi r1 ,r0 ,0
+addi r2 ,r1 ,10
+Loop:
+beq r1 ,r2 ,End
+addi r2 ,r2 ,-1
+beq r0 ,r0 ,Loop
+End:
+^Z
+Insts num: 5
+========= Start =========
+entry: 0      addi R1 ,R0 ,0
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN ) Entry has never been used.
+=========================
+entry: 1      addi R2 ,R1 ,10
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 1      addi R2 ,R2 ,-1
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R0 ,R0 ,Loop
+prediction: N
+outcome   : T
+Prediction fail
+misprediction: 1
+0. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 1
+0. ( 001, WN, SN, SN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 1      addi R2 ,R2 ,-1
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 010, WN, SN, SN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R0 ,R0 ,Loop
+prediction: N
+outcome   : T
+Prediction fail
+misprediction: 2
+0. ( 010, WN, SN, SN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 2
+0. ( 101, WN, SN, WN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 1      addi R2 ,R2 ,-1
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 010, WN, SN, WN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R0 ,R0 ,Loop
+prediction: N
+outcome   : T
+Prediction fail
+misprediction: 3
+0. ( 010, WN, SN, WN, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 3
+0. ( 101, WN, SN, WT, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 1      addi R2 ,R2 ,-1
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 010, WN, SN, WT, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R0 ,R0 ,Loop
+prediction: T
+outcome   : T
+Prediction success
+misprediction: 3
+0. ( 010, WN, SN, WT, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 3
+0. ( 101, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 1      addi R2 ,R2 ,-1
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R0 ,R0 ,Loop
+prediction: T
+outcome   : T
+Prediction success
+misprediction: 3
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 3
+0. ( 101, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 1      addi R2 ,R2 ,-1
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R0 ,R0 ,Loop
+prediction: T
+outcome   : T
+Prediction success
+misprediction: 3
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 3
+0. ( 101, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 1      addi R2 ,R2 ,-1
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R0 ,R0 ,Loop
+prediction: T
+outcome   : T
+Prediction success
+misprediction: 3
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 3
+0. ( 101, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 1      addi R2 ,R2 ,-1
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R0 ,R0 ,Loop
+prediction: T
+outcome   : T
+Prediction success
+misprediction: 3
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 3
+0. ( 101, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 1      addi R2 ,R2 ,-1
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R0 ,R0 ,Loop
+prediction: T
+outcome   : T
+Prediction success
+misprediction: 3
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 3
+0. ( 101, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 1      addi R2 ,R2 ,-1
+prediction: N
+outcome   : N
+Prediction success
+misprediction: 0
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R0 ,R0 ,Loop
+prediction: T
+outcome   : T
+Prediction success
+misprediction: 3
+0. ( 010, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+entry: 0      beq R1 ,R2 ,End
+prediction: N
+outcome   : T
+Prediction fail
+misprediction: 4
+0. ( 101, WN, SN, ST, SN, SN, SN, SN, SN )
+1. ( 000, SN, SN, SN, SN, SN, SN, SN, SN )
+=========================
+Finish!
