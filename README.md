@@ -9,7 +9,7 @@ There are some sample I/O in the file.
 
 ## Code Intro<br/>
 
-###Variables:<br/>
+### Variables:<br/>
 **Line 9** for each input instruction.<br/>
 **Line 10,11** are for instruction input,<br/>
 then store in struct Inst, last, push into Insts.<br/>
@@ -23,7 +23,7 @@ Then push into BTBs.<br/>
 **Line 34** for Regester storing.<br/>
 <br/>
 
-###Functions:<br/>
+### Functions:<br/>
 **fetch(string): ** for each input instruction.<br/>
 **predict(): ** for each input instruction.<br/>
 **outcome(): ** for each input instruction.<br/>
