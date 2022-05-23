@@ -21,7 +21,7 @@ currently used entry, and PC & next_PC.<br/>
 number of misprediction, and wether it has been used.<br/>
 Then push into BTBs.<br/>
 **Line 34** for Regester storing.<br/>
-<br/>
+============================================================<br/>
 
 ### Functions:<br/>
 **fetch(string): ** for each input instruction.<br/>
@@ -29,4 +29,5 @@ Then push into BTBs.<br/>
 **outcome(): ** for each input instruction.<br/>
 **print(): ** for each input instruction.<br/>
 **update(char,char): ** for each input instruction.<br/>
+============================================================<br/>
 
