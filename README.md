@@ -24,10 +24,10 @@ Then push into BTBs.<br/>
 ============================================================<br/>
 
 ### Functions:<br/>
-**fetch(string): ** for each input instruction.<br/>
-**predict(): ** for each input instruction.<br/>
-**outcome(): ** for each input instruction.<br/>
-**print(): ** for each input instruction.<br/>
-**update(char,char): ** for each input instruction.<br/>
+**fetch(string):** for each input instruction.<br/>
+**predict():** for each input instruction.<br/>
+**outcome():** for each input instruction.<br/>
+**print():** for each input instruction.<br/>
+**update(char,char):** for each input instruction.<br/>
 ============================================================<br/>
 
