@@ -7,7 +7,7 @@ Please input only code, do not enter address or note.
 There are some sample I/O in the file.
 <br />
 
-## Code Intro
+## Code Intro<br/>
 
 ###Variables:<br/>
 **Line 9** for each input instruction.<br/>
