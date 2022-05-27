@@ -2,6 +2,7 @@
 ## Manual
 Input interger N for number of entry.
 Then input assembly code.
+<br/>
 Please input only code, do not enter address or note.
 <br />
 There are some sample I/O in the file.
