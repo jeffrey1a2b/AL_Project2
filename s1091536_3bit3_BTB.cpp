@@ -197,7 +197,7 @@ void update(char P, char O)
 	else if (TN == "WT")
 		O == 'T' ? TN = "ST" : TN = "WN";
 	else if (TN == "ST")
-		O == 'T' ? TN = TN : TN = "NT";
+		O == 'T' ? TN = TN : TN = "WT";
 	BTBs[entry].BC[history] = TN;
 	// finish update BC
 	history = (history % 4) * 2;  // update 3-bit
